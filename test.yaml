@@ -22,7 +22,7 @@ services:
     depends_on:
       - db
     ports:
-      - 9000:9000
+      - "127.0.0.1:9000:9000"
     env_file: .env
     environment:
       WORDPRESS_DB_HOST: db:3306
